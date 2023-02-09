@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceShip Opdracht01</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/spacegame.js" type="application/javascript"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        //SpaceShip library inladen
+        var spaceShip = new SpaceShip(document.getElementById('container'));
+        //Level inladen
+        spaceShip.loadLevel(9);
+        //Eigen acties
+        spaceShip.run(function () {
+            // code  start
+            var getal1 = 4
+            var getal2 = 5
+            for (let i = 0; i < 4; i++){
+                    spaceShip.rotateRight();
+                    for (let step = getal1; step > 0; step--) {
+                        spaceShip.moveForward()
+                        
+                    }  
+                    spaceShip.rotateRight();  
+                    for (let step = getal2; step > 0; step--) {
+                        spaceShip.moveForward()
+                    }  
+                    getal1 = getal1 - 1
+                    getal2 = getal2 - 1
+                }
+
+
+            // code  einde
+        });
+    </script>
+</body>
+</html>
+var getal = 4
+var getal2 = 5
+for (let x = getal; x > 0; x--) {
+    spaceShip.rotateRight()
+    for (let x = 4; x > 0; x--) {
+        spaceShip.moveForward()
+    }
+    spaceShip.rotateRight()
+        for (let x = getal2; x > 0; x--) {
+            spaceShip.moveForward()
+        };
+getal = getal - 2
+getal2 = getal2 - 1
+};
