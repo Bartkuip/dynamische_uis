@@ -6,7 +6,7 @@ let gewenste_aantal_autos = parseInt(prompt("Hoeveel autos wilt u kwijt in de pa
 // 
 if (gewenste_aantal_autos > 80){
     floors = Math.ceil((gewenste_aantal_autos - 80) / 120);
-    var antwoord = "U heeft" + floors + "verdiepingen nodig";
+    var antwoord = "U heeft" + floors + "verdieping(en) nodig";
 } else {
     var antwoord = "Je hebt geen extra verdiepingen nodig, alleen de begaande grond.";
 };
@@ -16,5 +16,5 @@ if (gewenste_aantal_autos > 80){
 
 
 document.getElementById("antwoord").innerText = antwoord;
-
-console.log("Om het gewenste aantal autos kwijt te kunnen heb ik x verdiepingen nodig.")
+console.log("U heeft" + floors + "verdieping(en) nodig")
+alert("U heeft" + floors + "verdieping(en) nodig")
