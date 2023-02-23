@@ -1,16 +1,15 @@
 var test = true
 var drank = {}
+var drank = {"bier": {name: "bier", price : 2.30, amount: 0}, "wijn": {name: "wijn", price: 4.50, amount: 0}, "fris": {name: "fris", price: 2.00, amount: 0}}
+//drank.bier.amount += 
+//drank['bier']['amount'] += parseInt()
+
+
 while (test) {
     userInput = prompt("Wat wilt u bestellen?").toLowerCase();
-    //userInput.toLowerCase().includes("bier", "wijn", "fris") werkt niet :( )
-    if (userInput == "bier" || userInput == "wijn" || userInput == "fris"){
-        if (!(userInput in drank)){
-            orderAmount = parseInt(prompt("Hoeveel " + userInput + " wilt u?"))
-            drank[userInput] = orderAmount
-        } else {
-            orderAmount = parseInt(prompt("Hoeveel " + userInput + " wilt u?"))
-            drank[userInput] += orderAmount
-        }    
+    if (userInput in drank){
+        orderAmount = parseInt(prompt("Hoeveel " + userInput + " wilt u?"))
+        drank.userInput.amount += orderAmount
     } else if(userInput == "stop"){
         var test = false;
     } else {
@@ -18,6 +17,8 @@ while (test) {
     }
 }
 console.log("Bonnetje:")
-for (var key in drank) {
-    console.log(drank[key] + "x " + key); 
-}
+console.log(drank); 
+/*for (var key in drank) {
+    console.log(drank); 
+
+} */
