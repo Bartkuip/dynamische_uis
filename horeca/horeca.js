@@ -1,15 +1,11 @@
 var test = true
 var drank = {"bier": {name: "bier", price : 2.30, amount: 0}, "wijn": {name: "wijn", price: 4.50, amount: 0}, "fris": {name: "fris", price: 2.00, amount: 0}}
-//drank.bier.amount += 
-//drank['bier']['amount'] += parseInt()
-
 
 while (test) {
     userInput = prompt("Wat wilt u bestellen?").toLowerCase();
     if (userInput in drank){
         orderAmount = parseInt(prompt("Hoeveel " + userInput + " wilt u?"))
-        console.log(userInput)
-        drank.userInput.amount += orderAmount
+        drank[userInput].amount += orderAmount
     } else if(userInput == "stop"){
         var test = false;
     } else {
