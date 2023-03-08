@@ -9,7 +9,7 @@ while (test) {
     } else if(userInput == "stop"){
         var test = false;
     } else {
-        console.log("Dit ken ik niet.");
+        console.log("Dit hebben wij niet..");
     }
 }
 totaal = Math.round(drank.bier.price * drank.bier.amount + drank.wijn.price * drank.wijn.amount + drank.fris.price * drank.fris.amount)
