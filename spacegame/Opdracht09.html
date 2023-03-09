@@ -21,16 +21,13 @@
             var getal2 = 5
             for (let i = 0; i < 4; i++){
                     spaceShip.rotateRight();
-                    for (let step = getal1; step > 0; step--) {
+                    for (let step = getal1--; step > 0; step--) {
                         spaceShip.moveForward()
-                        
                     }  
                     spaceShip.rotateRight();  
-                    for (let step = getal2; step > 0; step--) {
+                    for (let step = getal2--; step > 0; step--) {
                         spaceShip.moveForward()
                     }  
-                    getal1 = getal1 - 1
-                    getal2 = getal2 - 1
                 }
 
 

@@ -12,9 +12,9 @@ while (test) {
         console.log("Dit hebben wij niet..");
     }
 }
-totaal = Math.round(drank.bier.price * drank.bier.amount + drank.wijn.price * drank.wijn.amount + drank.fris.price * drank.fris.amount)
+totaal = drank.bier.price * drank.bier.amount + drank.wijn.price * drank.wijn.amount + drank.fris.price * drank.fris.amount.toFixed(2)
 console.log("Bonnetje:");
-console.log(drank.bier.amount + "x bier: " + Math.round(drank.bier.amount * drank.bier.price) + " euro."); 
-console.log(drank.wijn.amount + "x wijn: " + Math.round(drank.wijn.amount * drank.wijn.price) + " euro."); 
-console.log(drank.fris.amount + "x fris: " + Math.round(drank.fris.amount * drank.fris.price) + " euro.");
-console.log("Totaal prijs is: " + totaal + " euro.") 
+console.log(drank.bier.amount + "x bier: " + drank.bier.amount * drank.bier.price + " euro."); 
+console.log(drank.wijn.amount + "x wijn: " + drank.wijn.amount * drank.wijn.price + " euro."); 
+console.log(drank.fris.amount + "x fris: " + drank.fris.amount * drank.fris.price + " euro.");
+console.log("Totaal prijs is: " + totaal.toFixed(2) + " euro.")
