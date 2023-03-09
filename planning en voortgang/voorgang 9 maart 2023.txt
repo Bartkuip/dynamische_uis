@@ -1,3 +1,6 @@
 voortgang 9 maart
 check je voortgang voor python + javascript
 daarna beginnen aan volgende opdrachten van python en javascript
+-
+wat ik gedaan heb:
+begonnen aan treasure hunt

@@ -2,22 +2,22 @@ userInput = parseInt(prompt("Hoeveel?"))
 line='';
 
 for (loop = 1; loop <= userInput; loop++) {
-    for(left=1; left <=loop; left++) {
-        if(left == 1){
-            line += left;
+    for(number=1; number <=loop; number++) {
+        if(number == 1){
+            line += number;
         } else {
-            line+= '-' + left;
+            line+= '-' + number;
         } 
     }
     line+= "<br>";
 }
 
 for (loop = userInput-1; loop >= 1; loop--) {
-    for(left=1; left <=loop; left++) {
-        if(left == 1){
-            line += left;
+    for(number=1; number <=loop; number++) {
+        if(number == 1){
+            line += number;
         } else {
-            line+='-'+ left;
+            line+='-'+ number;
         }
     }
     line+= "<br>";
